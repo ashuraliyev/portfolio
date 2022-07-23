@@ -112,11 +112,13 @@ html {
 
 .home {
     display: flex;
-    background: url(images/banner.jpg) no-repeat center;
+    background: url(images/pexels-miguel-á-padriñán-745365.jpg) no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
+    background-size: cover;
     font-family: 'Ubuntu', sans-serif;
+    height: calc(125vh - 80px);
 }
 
 .home .max-width {
