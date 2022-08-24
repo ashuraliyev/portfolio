@@ -527,6 +527,9 @@ section .title::after {
 /*footer section styling */
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #111;
     padding:20px 23px;
     color: #fff;
@@ -539,6 +542,48 @@ footer span a {
 
 footer span a:hover {
     text-decoration: underline;
+}
+footer .messages {
+    margin-right: 100px;
+    display: flex;
+    column-gap: 20px;
+}
+footer .messages .icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+footer .messages .icon:hover {
+    outline-offset: 4px;
+}
+footer .messages .icon:hover i{
+    animation: shake .25s;
+}
+footer .messages .icon-instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    outline-color: #a02d76;
+}
+footer .messages .icon-telegram:hover {
+    background-color: #1da1f2;
+    outline-color: #1da1f2;
+}
+footer .messages .icon-linkedin:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+footer .messages .icon-github:hover {
+    background-color: #2ea44f;
+    outline-color: #2ea44f;
 }
 
 
