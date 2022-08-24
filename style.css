@@ -712,5 +712,20 @@ footer .messages .icon-github:hover {
         font-size: 15px;
         padding: 7px 25px;
     }
+    footer .messages {
+        margin-right: 10px;
+        display: flex;
+        column-gap: 20px;
+    }
+    footer .messages .icon {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .scroll-up-btn.show {
+        bottom: 85px;
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 
